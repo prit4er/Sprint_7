@@ -14,4 +14,5 @@ public class Client {
                 .setBaseUri(BASE_URL)
                 .build();
     }
+
 }

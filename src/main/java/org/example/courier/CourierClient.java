@@ -40,5 +40,6 @@ public class CourierClient {
                       .delete(COURIER_DELETE_PATH + сourierId)
                       .then();
     }
+
 }
 

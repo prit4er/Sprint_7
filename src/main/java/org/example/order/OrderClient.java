@@ -42,4 +42,5 @@ public class OrderClient {
                       .put(CANCEL_ORDER_PATH)
                       .then();
     }
+
 }

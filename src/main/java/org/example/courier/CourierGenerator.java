@@ -13,4 +13,5 @@ public class CourierGenerator {
         return new Courier(RandomStringUtils.randomAlphanumeric(7), RandomStringUtils.randomAlphanumeric(7), RandomStringUtils.randomAlphanumeric(7));
 
     }
+
 }

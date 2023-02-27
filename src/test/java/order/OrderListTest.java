@@ -19,4 +19,5 @@ public class OrderListTest {
         ValidatableResponse responseOrderList = orderClient.getOrderList();
         responseOrderList.statusCode(200).and().body("orders", notNullValue());
     }
+
 }
