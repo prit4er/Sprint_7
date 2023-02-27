@@ -11,15 +11,19 @@ public class Order {
     private String comment;
     private String[] color;
 
-    public Order(String firstName, String lastName, String address, String metroStation, String phone, String rentTime, String deliveryDate, String comment, String[] color) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.address = address;
-        this.metroStation = metroStation;
-        this.phone = phone;
-        this.rentTime = rentTime;
-        this.deliveryDate = deliveryDate;
-        this.comment = comment;
+    public Order() {
+    }
+
+    public Order (String[] color) {
+
+        this.firstName = "Котик";
+        this.lastName = "Пушистый";
+        this.address = "ул. Мягких лапок, 25";
+        this.metroStation = "Сокольники";
+        this.phone = "+7123456789";
+        this.rentTime = "3";
+        this.deliveryDate = "2022-12-20";
+        this.comment = "коммент";
         this.color = color;
     }
 

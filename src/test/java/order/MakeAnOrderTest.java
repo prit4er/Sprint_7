@@ -4,6 +4,8 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
+import org.example.order.Order;
+import org.example.order.OrderClient;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
