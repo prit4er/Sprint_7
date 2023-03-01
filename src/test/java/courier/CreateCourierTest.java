@@ -71,7 +71,7 @@ public class CreateCourierTest {
     }
 
     @Test
-    @DisplayName("Create courier with existing data")
+    @DisplayName("Создание курьера с существующими данными")
     @Description("Создание курьера с существующими данными. Проверяем статус код и сообщение.")
     public void courierCanNotBeCreatedWithExistingCreds() {
         courierClient.createCourier(courier);
