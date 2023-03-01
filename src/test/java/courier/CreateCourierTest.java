@@ -52,8 +52,8 @@ public class CreateCourierTest {
     }
 
     @Test
-    @DisplayName("Create courier without password field")
-    @Description("Test to try create new courier without password field. Check status code and message")
+    @DisplayName("Создание курьера без заполнения поля пароля")
+    @Description("Курьера нельзя создать без пароля. Проверяем статус код и сообщение об ошибке")
     public void courierCanNotBeCreatedWithoutPassword() {
         courier.setPassword(null);
         ValidatableResponse responseNullPassword = courierClient.createCourier(courier);
@@ -61,8 +61,8 @@ public class CreateCourierTest {
     }
 
     @Test
-    @DisplayName("Create courier without login and password fields")
-    @Description("Test to try create new courier without login and password fields. Check status code and message")
+    @DisplayName("Создание курьера без заполнения поля пароля и логина")
+    @Description("Курьера нельзя создать без пароля и логина. Проверяем статус код и сообщение об ошибке")
     public void courierCanNotBeCreatedWithoutLoginAndPassword() {
         courier.setLogin(null);
         courier.setPassword(null);
@@ -72,7 +72,7 @@ public class CreateCourierTest {
 
     @Test
     @DisplayName("Create courier with existing data")
-    @Description("Test to try create courier with the same/existing data. Check status code and message.")
+    @Description("Создание курьера с существующими данными. Проверяем статус код и сообщение.")
     public void courierCanNotBeCreatedWithExistingCreds() {
         courierClient.createCourier(courier);
         ValidatableResponse responseCreateCourier = courierClient.createCourier(courier);
@@ -80,7 +80,7 @@ public class CreateCourierTest {
     }
 
     @After
-    @Step("Delete test courier")
+    @Step("Удаление курьера")
     public void deleteCourier() {
         if (courierId != 0) {
             courierClient.deleteCourier(courierId);
